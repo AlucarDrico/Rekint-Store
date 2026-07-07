@@ -193,12 +193,37 @@
         }
 
         .credits a:hover {
-            color: #ff3333; /* Vermelho sutil no hover remetendo a Velozes */
+            color: #ff3333;
         }
 
         .copyright {
             font-size: 0.75rem;
             color: #555;
+        }
+
+        /* Botão Flutuante do WhatsApp */
+        .whatsapp-btn {
+            position: fixed;
+            bottom: 20px;
+            left: 20px;
+            background-color: #25d366;
+            color: #fff;
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+            z-index: 9999;
+            text-decoration: none;
+            transition: transform 0.3s ease, background-color 0.3s ease;
+        }
+
+        .whatsapp-btn:hover {
+            transform: scale(1.1);
+            background-color: #20ba5a;
         }
     </style>
 </head>
@@ -287,8 +312,8 @@
             <!-- Card 6 -->
             <div class="product-card">
                 <div class="image-container">
-                    <img src="https://images.unsplash.com/photo-1475184634245-9018e861a40c?w=500" class="img-default" alt="Tricot Outono">
-                    <img src="https://images.unsplash.com/photo-1516762689617-e1cffcef479d?w=500" class="img-hover" alt="Detalhe Tricot Outono">
+                    <img src="./img/images1.jpg" class="img-default" alt="Tricot Outono">
+                    <img src="./img/images2.jpg" class="img-hover" alt="Detalhe Tricot Outono">
                 </div>
                 <div class="product-info">
                     <h3 class="product-title">Suéter Tricot Trançado</h3>
@@ -322,6 +347,12 @@
 
         </div>
     </main>
+
+    <!-- BOTÃO FLUTUANTE DO WHATSAPP -->
+    <!-- Para ativar, basta substituir o número 5500000000000 pelo número da loja no formato: Código do país + DDD + Número -->
+    <a href="https://wa.me/5500000000000?text=Olá!%20Gostaria de saber mais sobre as roupas da Rekint." class="whatsapp-btn" target="_blank" aria-label="Fale conosco pelo WhatsApp">
+        <i class="fab fa-whatsapp"></i>
+    </a>
 
     <!-- RODAPÉ -->
     <footer>
